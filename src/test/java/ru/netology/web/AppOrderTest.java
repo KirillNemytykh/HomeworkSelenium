@@ -69,7 +69,7 @@ class AppOrderTest {
     @Test
     public void shouldBeSuccessfulForm() {
         driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Иванов Иван");
-        driver.findElement(By.cssSelector("[data-test-id= 'phone'] input")).sendKeys("+79999999");
+        driver.findElement(By.cssSelector("[data-test-id= 'phone'] input")).sendKeys("+79999999999");
         driver.findElement(By.cssSelector("[data-test-id= 'agreement'] ")).click();
         driver.findElement(By.cssSelector("button.button")).click();
         var actualTextElement = driver.findElement(By.cssSelector("[data-test-id=order-success]"));
